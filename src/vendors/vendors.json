@@ -1,0 +1,12 @@
+[
+    {
+        "name": "mavo",
+        "url": "http://get.mavo.io/",
+        "files": [
+            "mavo.js",
+            "maps/mavo.js.map",
+            "mavo.css",
+            "maps/mavo.css.map"
+        ]
+    }
+]
