@@ -87,6 +87,21 @@ module.exports = {
                     fallback: 'style-loader',
                 }),
             },
+            {
+                test: /\.js$/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                            ['env', {
+                                targets: {
+                                    browsers: ['> 1%', 'last 2 versions'],
+                                },
+                            }],
+                        ],
+                    },
+                },
+            },
         ],
     },
     plugins: Object.values(plugins),
